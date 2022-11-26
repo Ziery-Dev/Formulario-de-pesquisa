@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formualário de pesquisa</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="awesome/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+
+        <!--###topo inicio###-->
+        <div id="topo"> 
+            <div class="logo_site"> <!--Logo inicio-->
+                <img src="imagens/logo.jpg" height="65px" alt="">
+                <div><h3>Ziery Reis</h3>2022</div> 
+            </div> <!--logo fim-->
+
+            <div class="botaohb"> <!--Toggle button-->
+                <img onclick="cliqueBotao()" src="imagens/button.png" alt="">
+            </div> <!--Toggle button fim-->
+
+           <nav id="alternavegacao" class="navegacao"> <!--navegação inicio-->
+                <a href="">
+                    <div class="item_nav1">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="item_nav2">
+                        Avalie!
+                    </div>
+                </a>
+                <a href="">
+                    <div class="item_nav3">
+                        Inscreva-se
+                    </div>
+                </a>
+                <a href="">
+                    <div class="item_nav4">
+                        Conecte-se
+                    </div>
+                </a>
+           </nav> <!--navegação fim-->
+
+           <div class="clear"></div> <!--limpa o fluxo-->
+        
+        </div> 
+        <!--###Topo fim#####-->
+
+
+        <h1>Formulário</h1>
+        
+        <!--####inicio do formulário####-->
+        <div id="conteudo"> 
+         <form class="formulario"> 
+            <div>
+                <label for="name">Nome:</label>
+                <input class="input_txt" placeholder="Insira seu nome"  type="text" name="name" id="name">
+            </div>
+            <div>
+                <label  for="email">E-mail:</label>
+                <input class="input_txt" placeholder="Insira seu email" type="email"  id="email">
+            </div>
+            <div>
+                <label for="idade">Idade:</label>
+                <input class="input_txt"  placeholder="insira sua idade" type="number"  id="idade" min="10" max="100">
+            </div>
+
+            <div>
+                <label><p>Qual opção melhor descreve sua função atual?</p></label>
+                <select class="input_txt" name="funcao" id="funcao">
+                    <option value="estudante">Estudante</option>
+                    <option value="desempregado">Desempregado</option>
+                    <option value="trabalhoIntegral">Trabalho em tempo integral</option>
+                    <option value="trabalhoPeriodo">Trabalho em meio periodo</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+
+            <div >
+                <label  for="recomendar"><p>Você recomendaria esse formualário a um amigo?</p></label> 
+                <span class="input_radio"><input  type="radio" name="recomendar"> Sim </span> 
+                <span class="input_radio"><input  type="radio" name="recomendar"> Não </span> 
+                <span class="input_radio"><input  type="radio" name="recomendar"> Talvez</span>  
+            </div>
+
+            <div>
+                <label><p>Qual a sua linguagem de programação favorita?</p></label>
+                <select class="input_txt" name="funcao" id="funcao">
+                    <option value="phyton">Phyton</option>
+                    <option value="js">JavaScript</option>
+                    <option value="php">PHP</option>
+                    <option value="c++">C++</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+
+            <div >
+                <label  for="recomendar"><p> Marque somente as opções que se tratam de linguagens de programação </p></label> 
+                <span class="input_radio"><input  type="checkbox" name="recomendar">JavaScript </span> 
+                <span class="input_radio"><input  type="checkbox" name="recomendar"> PHP </span> 
+                <span class="input_radio"><input  type="checkbox" name="recomendar"> CSS</span>  
+                <span class="input_radio"><input  type="checkbox" name="recomendar"> Phyton </span> 
+                <span class="input_radio"><input  type="checkbox" name="recomendar"> Html </span> 
+                <span class="input_radio"><input  type="checkbox" name="recomendar"> Bootstrap</span>  
+                <span class="input_radio"><input  type="checkbox" name="recomendar"> C sharp </span> 
+                <span class="input_radio"><input  type="checkbox" name="recomendar"> Excel </span> 
+            </div>
+
+            <div class="area_txt" > 
+                <label for="sugestoes">Sua opnião é importante para nós, assim podemos ficar cientes no que precisamos melhorar!</label>
+                <textarea  placeholder="Escreva sua sugestão" name="sugestoes" ></textarea>
+            
+                <input class="botao" type="submit" value="Enviar" >
+            </div>
+
+         </form> 
+        </div> 
+        <!--FIM formulário-->
+    </div>
+   
+    
+    
+    <script src="script.js"></script> <!--chamada do script-->
+      
+
+</body>
+</html>
