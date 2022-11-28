@@ -53,7 +53,12 @@ body{ /*as formatações aqui são com relação a imagem de fundo*/
     border-radius: 4px;
     color: white;
     font-size: 0.8em;
+    margin-top: 3px;
 
+}
+
+.item_nav1 img {
+    width: 15px;
 }
 
 .item_nav3{ /*formata apens o item 3 da navegação*/
