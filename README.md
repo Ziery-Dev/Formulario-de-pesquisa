@@ -1,2 +1,2 @@
 # Formulário de pesquisa
- [link para vizualização](https://ziery-dev.github.io/Formulario-de-pesquisa/)
+ [clique para vizulizar no browser](https://ziery-dev.github.io/Formulario-de-pesquisa/)
